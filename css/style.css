@@ -1,0 +1,71 @@
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+      height:100vh;
+    /*  margin:auto; */
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-rows: 200px 200px 700px 150px 100px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "hd"
+      "sd"
+      "main"
+      "sdr"
+      "ft";
+    /* border: 2px solid #bc477b; */
+  }
+  body{
+    background: #444;
+    color: #fffff8;
+    font-size:24px;
+  }
+  h1 {
+    font-weight:bold;
+    z-index:1;
+  }
+  .header{
+    /* row start/column start/ row end/ column end */
+    grid-area: hd;
+  }
+  .footer{
+    grid-area: ft;  
+    background: #560027;
+  }
+  .sidebar{
+    grid-area: sd;
+    background: #560027;
+  }
+  .sidebarRight{
+    grid-area: sdr;
+    background: #880E4F;
+  }
+  .content{
+    grid-area: main;
+    background: #bc477b;
+  }
+  .box{
+    /* width: 250px;
+    height: 150px; */
+    border: 1px solid white;
+  }
+  #nestedHeaderGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px;
+    text-align: center;
+  }
+  #headerBox_one{
+    background: #bc477b;
+  }
+  #headerBox_two{
+    background: #880E4F;
+  }
+  #nestedSideMenuGrid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:100%;
+    text-align: center;
+/* If media screen is wide enough and switch to a different layout*/
+}
