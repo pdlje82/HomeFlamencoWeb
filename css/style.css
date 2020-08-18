@@ -1,11 +1,11 @@
 .container{
     /* Step 1: Set display to grid */
       display:grid;
-      height:98vh;
+      height:100vh;
       margin: 0mm;
    /* Step 2: setup rows amd columns */
       /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-rows: 135px 100px 1fr 120px 75px;
+      grid-template-rows: 145px 100px 1fr 120px 75px;
       grid-template-columns: 1fr;
       grid-template-areas: 
       "hd"
@@ -16,28 +16,29 @@
     /* border: 2px solid #bc477b; */
   }
   body{
-    background: #000;
+    background: #560027; /*#000;*/
     color: #fffff8;
     font-size:24px;
+    background-image: url('../pics/abanico_bw.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   h1 {
     font-weight:bold;
-    font-size: 2.5rem;
-    z-index:1;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 2.6rem;
   }
   h2 {
     font-weight:bold;
     font-size: 2rem;
-    z-index:1;
   }
   h3 {
     font-weight:bold;
     font-size: 1.8rem;
-    vertical-align: top;
-    z-index:1;
   }
   .box{
-    /*border: 1px solid black*/;
+    /*border: 1px solid black;*/
   }
   .header{
     /* row start/column start/ row end/ column end */
@@ -45,23 +46,25 @@
   }
   .footer{
     grid-area: ft;  
-    background: #560027;
+    /*background: #560027;*/
   }
   .sidebar{
     grid-area: sd;
-    background: #560027;
+    /*background: #560027;*/
   }
   .ads{
     grid-area: sdr;
-    background: #7f0000;
+    text-align: center;
+    justify-items: center;
+    /*background: #7f0000;*/
   }
   .content{
     grid-area: main;
-    /*background: #444;*/
-    background-image: url('../pics/main_background_dark.jpg');
+    background: #000
+    /*background-image: url('../pics/main_background_dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right;*/
   }
   #sideBarBox{
     border: 1px solid black;
@@ -69,19 +72,22 @@
   #nestedHeaderGrid{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 35px;
+    grid-template-rows: 90px 55px;
     text-align: center;
+ 
   }
   #headerBox_top{
-    background: #fff /*#bc477b;*/
+    background: #fffff8; /*#bc477b;*/
+    margin: 16px;
   }
   #headerBox_bottom{
-    background: #f05545;
+    /*background: #b71c1c; /*#f05545;*/
+    font-weight: bold;
   }
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 390px 1fr 110px 130px;
+    grid-template-columns: 390px 1fr 110px 70px;
     height:100%;
     text-align: center;
   }
@@ -95,14 +101,17 @@
     height:100%;
     text-align: center;
   }
-  #topHeaderBox_3{
-    background-image: url('../pics/HF_Logo_new.png');
+  #logoBox{
+    background-image: url('../pics/HF_Logo_new2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
   }
-  #topHeaderBox_4{
-    background: #b71c1c;
+  #logInBox{
+    background: #560027; /*#b71c1c;*/
+    border: 1px solid black;
+    font-size: 1.3rem;
+    margin: 1px;
   }
   #youtubeBox{
     background-image: url('../pics/youtube.jpg');
@@ -138,17 +147,26 @@
     margin: 0mm;
  /* Step 2: setup rows amd columns */
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: 135px 1fr 75px;
+    grid-template-rows: 145px 1fr 75px;
     grid-template-columns: 175px 1fr 160px;
     grid-template-areas: 
     "hd hd hd"
     "sd main sdr"
     "ft ft ft";
   }
+  h1 {
+    font-weight:bold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+  }
+  #headerBox_top{
+    background: #fffff8; /*#bc477b;*/
+    margin: 10px;
+  }
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 390px 1fr 110px 160px;
+    grid-template-columns: 600px 1fr 110px 80px;
     height:100%;
     text-align: center;
   }
@@ -168,17 +186,26 @@
     margin: 0mm;
  /* Step 2: setup rows amd columns */
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: 135px 1fr 75px;
-    grid-template-columns: 220px 1fr 230px;
+    grid-template-rows: 145px 1fr 75px;
+    grid-template-columns: 300px 1fr 300px;
     grid-template-areas: 
     "hd hd hd"
     "sd main sdr"
     "ft ft ft";
   }
+  h1 {
+    font-weight:bold;
+    text-shadow: 4px 4px 6px #000;
+    font-size: 3.8rem;
+  }
+  #headerBox_top{
+    background: #fffff8; /*#bc477b;*/
+    margin: 2px;
+  }
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 390px 1fr 110px 230px;
+    grid-template-columns: 800px 1fr 110px 90px;
     height:100%;
     text-align: center;
   }
