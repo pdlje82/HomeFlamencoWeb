@@ -26,11 +26,13 @@
   }
   h1 {
     font-weight:bold;
-    text-shadow: 2px 2px 2px #000;
-    font-size: 2.6rem;
+    text-shadow: 2px 2px 10px #f05545;
+    font-size: 2.8rem;
+    text-justify: left;
   }
   h2 {
     font-weight:bold;
+    text-shadow: 2px 2px 10px #f05545;
     font-size: 2rem;
   }
   h3 {
@@ -47,6 +49,7 @@
   .footer{
     grid-area: ft;  
     /*background: #560027;*/
+    text-align: center;
   }
   .sidebar{
     grid-area: sd;
@@ -55,12 +58,11 @@
   .ads{
     grid-area: sdr;
     text-align: center;
-    justify-items: center;
     /*background: #7f0000;*/
   }
   .content{
     grid-area: main;
-    background: #000
+    background: #000;
     /*background-image: url('../pics/main_background_dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,20 +76,21 @@
     grid-template-columns: 100%;
     grid-template-rows: 90px 55px;
     text-align: center;
- 
   }
   #headerBox_top{
     background: #fffff8; /*#bc477b;*/
     margin: 16px;
+    border-radius: 40px;
   }
   #headerBox_bottom{
     /*background: #b71c1c; /*#f05545;*/
-    font-weight: bold;
+    /*font-weight: bold;*/
+    text-shadow: 2px 2px 20px #f05545;
   }
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 390px 1fr 110px 70px;
+    grid-template-columns: 420px 1fr 1fr 80px 80px;
     height:100%;
     text-align: center;
   }
@@ -105,13 +108,16 @@
     background-image: url('../pics/HF_Logo_new2.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
+    border-radius: 0px;
   }
   #logInBox{
     background: #560027; /*#b71c1c;*/
     border: 1px solid black;
     font-size: 1.3rem;
+    text-shadow: 1px 1px 5px #f05545;
     margin: 1px;
+    border-radius: 50px;
   }
   #youtubeBox{
     background-image: url('../pics/youtube.jpg');
@@ -156,8 +162,9 @@
   }
   h1 {
     font-weight:bold;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px #000;
+    font-size: 3.3rem;
+    text-shadow: 2px 2px 11px #f05545;
+    text-align: left;
   }
   #headerBox_top{
     background: #fffff8; /*#bc477b;*/
@@ -166,7 +173,7 @@
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 600px 1fr 110px 80px;
+    grid-template-columns: 500px 1fr 175px 110px 100px;
     height:100%;
     text-align: center;
   }
@@ -195,8 +202,9 @@
   }
   h1 {
     font-weight:bold;
-    text-shadow: 4px 4px 6px #000;
+    text-shadow: 2px 2px 12px #f05545;
     font-size: 3.8rem;
+    text-align: left;
   }
   #headerBox_top{
     background: #fffff8; /*#bc477b;*/
@@ -205,7 +213,7 @@
   #nestedTopHeaderGrid{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 800px 1fr 110px 90px;
+    grid-template-columns: 600px 1fr 200px 130px 120px;
     height:100%;
     text-align: center;
   }
