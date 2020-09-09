@@ -1,0 +1,47 @@
+.section {
+  grid-area: main;
+  /*background: #000;*/
+  /*background-image: url('../pics/main_background_dark.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;*/
+}
+.card_container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    height: 90%;
+    margin: 1%;
+    /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px;
+    grid-template-areas:
+      "blog_tl blog_tr"
+      "blog_bl blog_br";
+    border: 1px solid #fffff8;
+    box-shadow: 2px 2px 10px #f05545;
+    border-radius: 30px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border: 1px solid #fffff8;
+  box-shadow: 2px 2px 10px #f05545;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 4px 4px 20px #f05545;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+#blogCard1 {
+  background-image: url("../pics/card_01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

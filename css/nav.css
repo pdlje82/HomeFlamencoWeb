@@ -1,0 +1,26 @@
+.nav {
+  grid-area: nav;
+  /*background: #560027;*/
+}
+.flex_container_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly ;
+  }
+h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #f05545;
+  font-size: 1.2rem;
+}
+#navbox {
+    width: 30%;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#navbox:hover {
+    box-shadow: 2px 2px 10px #f05545;
+    background-blend-mode: multiply;
+}

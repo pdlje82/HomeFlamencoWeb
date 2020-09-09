@@ -1,216 +1,34 @@
-.container{
-    /* Step 1: Set display to grid */
-      display:grid;
-      height:100vh;
-      margin: 0mm;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-rows: 145px 100px 1fr 120px 75px;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "hd"
-      "sd"
-      "main"
-      "sdr"
-      "ft";
-    /* border: 2px solid #bc477b; */
-  }
-  body{
-    background: #560027; /*#000;*/
-    color: #fffff8;
-    font-size:24px;
-    background-image: url('../pics/abanico_bw.png');
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  h3 {
-    font-weight:bold;
-    font-size: 1.8rem;
-  }
-  .box{
-    /*border: 1px solid black;*/
-  }
-  .header{
-    /* row start/column start/ row end/ column end */
-    grid-area: hd;
-  }
-  .footer{
-    grid-area: ft;  
-    /*background: #560027;*/
-    text-align: center;
-  }
-  .sidebar{
-    grid-area: sd;
-    /*background: #560027;*/
-  }
-  .ads{
-    grid-area: sdr;
-    text-align: center;
-    /*background: #7f0000;*/
-  }
-  .content{
-    grid-area: main;
-    background: #000;
-    /*background-image: url('../pics/main_background_dark.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;*/
-  }
-  #sideBarBox{
-    border: 1px solid black;
-  }
-  #nestedHeaderGrid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 90px 55px;
-    text-align: center;
-  }
-  #headerBox_top{
-    background: #fffff8; /*#bc477b;*/
-    margin: 16px;
-    border-radius: 40px;
-  }
-  #headerBox_bottom{
-    /*background: #b71c1c; /*#f05545;*/
-    /*font-weight: bold;*/
-    text-shadow: 2px 2px 20px #f05545;
-  }
-  #nestedTopHeaderGrid{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 420px 1fr 1fr 80px 80px;
-    height:100%;
-    text-align: center;
-  }
-  #topHeaderBox_1{
-    color: #b71c1c;
-  }
-  #socialMediaGrid{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 50px 50px 50px;
-    height:100%;
-    text-align: center;
-  }
-  #logoBox{
-    background-image: url('../pics/HF_Logo_new2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    border-radius: 0px;
-  }
-  #logInBox{
-    background: #560027; /*#b71c1c;*/
-    border: 1px solid black;
-    font-size: 1.3rem;
-    text-shadow: 1px 1px 5px #f05545;
-    margin: 1px;
-    border-radius: 50px;
-  }
-  #youtubeBox{
-    background-image: url('../pics/youtube.jpg');
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #facebookBox{
-    background-image: url('../pics/fb.png');
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #instagramBox{
-    background-image: url('../pics/instagram.png');
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #nestedSideMenuGrid{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    height:100%;
-    text-align: center;
-  }
+@import "header.css"; /* import header styles */
+@import "nav.css"; /* import navigation menu styles */
+@import "content.css"; /* import content styles */
+@import "footer.css"; /* import footer styles */
+
+body {
+  background: #560027; /*#000;*/
+  color: #fffff8;
+  font-size: 1rem;
+  background-image: url("../pics/abanico_bw.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid_container {
+  /* Step 1: Set display to grid */
+  display: grid;
+  height: 98vh;
+  margin: 0mm;
+  /* Step 2: setup rows amd columns */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: 130px 70px 1fr 75px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "ft";
+  /* border: 2px solid #bc477b; */
+}
+.box {
+  /*border: 1px solid black;*/
+}
 /* If media screen is wide enough and switch to a different layout*/
-@media(min-width:1100px){
-  .container{
-    /* Step 1: Set display to grid */
-    display:grid;
-    height:98vh;
-    margin: 0mm;
- /* Step 2: setup rows amd columns */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: 145px 1fr 75px;
-    grid-template-columns: 175px 1fr 160px;
-    grid-template-areas: 
-    "hd hd hd"
-    "sd main sdr"
-    "ft ft ft";
-  }
-  h1 {
-    font-weight:bold;
-    font-size: 3.3rem;
-    text-shadow: 2px 2px 11px #f05545;
-    text-align: left;
-  }
-  #headerBox_top{
-    background: #fffff8; /*#bc477b;*/
-    margin: 10px;
-  }
-  #nestedTopHeaderGrid{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 500px 1fr 175px 110px 100px;
-    height:100%;
-    text-align: center;
-  }
-  #nestedSideMenuGrid{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 100%;
-    height:100%;
-    text-align: center;
-  }
-}
-@media(min-width:1600px){
-  .container{
-    /* Step 1: Set display to grid */
-    display:grid;
-    height:98vh;
-    margin: 0mm;
- /* Step 2: setup rows amd columns */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: 145px 1fr 75px;
-    grid-template-columns: 300px 1fr 300px;
-    grid-template-areas: 
-    "hd hd hd"
-    "sd main sdr"
-    "ft ft ft";
-  }
-  h1 {
-    font-weight:bold;
-    text-shadow: 2px 2px 12px #f05545;
-    font-size: 3.8rem;
-    text-align: left;
-  }
-  #headerBox_top{
-    background: #fffff8; /*#bc477b;*/
-    margin: 2px;
-  }
-  #nestedTopHeaderGrid{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 600px 1fr 200px 130px 120px;
-    height:100%;
-    text-align: center;
-  }
-  #nestedSideMenuGrid{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 100%;
-    height:100%;
-    text-align: center;
-  }
-}
