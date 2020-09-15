@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>blog post 01</title>
+    <title>first blog</title>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
@@ -11,11 +11,100 @@
   </head>
 
   <body>
-    <article class="article box">
-        <p>Article</p>
-    </article>
-    <aside class ="aside box">
-        <p>side note</p>
-    </aside>
+    <div class="grid_container">
+      <header class="header box">
+        <div class="flex_container_header">
+          <div class="box" id="home">
+            <h1>Home Flamenco</h1>
+          </div>
+          <div class="box" id="socialMedia">
+            <div class="socialMediaGrid">
+              <div class="box" id="youtubeBox"></div>
+              <div class="box" id="facebookBox"></div>
+              <div class="box" id="instagramBox"></div>
+            </div>
+          </div>
+          <div class="box" id="login">
+            <h3><button class="button">Login</button></h3>
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav box">
+        <div class="flex_container_nav">
+          <div class="box" id="navbox">
+            <a href="index.html">
+              <h3>Blogs</h3>
+            </a>
+          </div>
+          <div class="box" id="navbox">
+            <h3>Concerts</h3>
+          </div>
+          <div class="box" id="navbox">
+            <h3>Classes</h3>
+          </div>
+        </div>
+      </nav>
+
+      <section class="section box">
+        <article class="article box">
+          <h4>My first blog article</h4>
+          <p>
+            Ādesha or Ādeśa (Sanskrit: आदेश) means 'an order', 'command' or
+            'advice', 'instruction', 'precept', 'rule'
+          </p>
+          <h5>Meaning</h5>
+          <p>
+            The word, Ādesha appears to be a semantically polyvalent compound
+            representing two homonymous compounds of different origin and
+            formation; it was surmised that ādeśa- in the sense of "substitute"
+            owes its origin to a combination of ā- and deśa-, whereas ādeśa- in
+            the sense of "advice" belongs to the verb ā- diś- "to point out, to
+            teach"; [2] it is the combination of ā- meaning 'toward', and diś
+            meaning 'to show or direct'.
+          </p>
+          <h5>Grammatical usage</h5>
+          <p>
+            Nirvachanashastra is a heremeneutic device that is used for
+            word-analysis and derivation. The proper understanding of the
+            relation in nirvachana analysis between a noun and some activity,
+            expressed by a finite verb or by mention of a verbal root came to
+            the fore through the study of Yāska's Nirukta done in the light of a
+            model of substitution according to which model adesha
+            ('substitution') takes the sthana ('place') of the original sthanin
+            ('place-holder') under the given circumstances. Sthana refers to
+            artha ('meaning'), thus nirvachanas are merely place-holders in
+            semantic space; one gets a different thought if one gets a different
+            sentence to represent the same truth.
+          </p>
+        </article>
+        <aside class="aside box">
+          <div class="flex_about">
+            <div class="box" id="home">
+              <h4>About the author</h4>
+              <p>
+                Jan is a mechatronics engineer currently working at a photon
+                science research facility in Hamburg, Germany. A couple of years
+                ago he discovered his love for programming. He is into Machine
+                Learning and Data Analysis with Python as well as Front-End
+                Development and WebRTC. If you want to drop him a line, click
+                <a href="mailto: abc@example.com">here</a>
+              </p>
+            </div>
+            <div class="box" id="socialMedia">
+              <div class="shareSocialMediaGrid">
+                <p>Share this article</p>
+                <div class="box" id="facebookBox"></div>
+                <div class="box" id="instagramBox"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer box">
+        <p>Footer box</p>
+      </footer>
+    </div>
   </body>
 </html>
