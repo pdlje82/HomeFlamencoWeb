@@ -1,7 +1,8 @@
 @import "header.css"; /* import header styles */
 @import "nav.css"; /* import navigation menu styles */
-@import "content.css"; /* import content styles */
+@import "cards.css"; /* import content styles */
 @import "footer.css"; /* import footer styles */
+@import "article.css";
 
 body {
   background: #560027; /*#000;*/
@@ -28,7 +29,22 @@ body {
     "ft";
   /* border: 2px solid #bc477b; */
 }
+h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #f05545;
+  font-size: 1.4rem;
+}
+h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #f05545;
+  font-size: 1.3rem;
+}
+h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #f05545;
+  font-size: 2rem;
+}
 .box {
-  /*border: 1px solid black;*/
+  /*border: 1px solid black; */
 }
 /* If media screen is wide enough and switch to a different layout*/
