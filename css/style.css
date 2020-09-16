@@ -45,6 +45,6 @@ h1 {
   font-size: 2rem;
 }
 .box {
-  /*border: 1px solid black; */
+  /*border: 1px solid black;*/ 
 }
 /* If media screen is wide enough and switch to a different layout*/

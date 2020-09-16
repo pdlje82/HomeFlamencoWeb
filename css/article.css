@@ -27,7 +27,7 @@ h4 {
 .shareSocialMediaGrid {
   display: grid;
   grid-template-rows: 50px;
-  grid-template-columns: 120px 40px 40px;
+  grid-template-columns: 120px 40px 40px 40px 40px;
   height: 100%;
   text-align: center;
 }
@@ -37,4 +37,40 @@ a:link {
 /* visited link */
 a:visited {
   color: inherit;
+}
+.aboutGrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 120px 1fr;
+  margin: 4px;
+}
+#avatarBox {
+  background-image: url("../pics/mono.jpg");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sharelinkedinBox {
+  background-image: url("../pics/linkedin.png");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sharetwitterBox {
+  background-image: url("../pics/twitter.png");
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sharefacebookBox {
+  background-image: url("../pics/fb.png");
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#shareinstagramBox {
+  background-image: url("../pics/instagram.png");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
